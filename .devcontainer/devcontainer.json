@@ -1,0 +1,17 @@
+{
+    "name": "Adfreeplay Devcontainer",
+    "dockerFile": "Dockerfile",
+    "postCreateCommand": "npm install --prefix frontend",
+    "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash"
+    },
+    "extensions": [
+        "rust-lang.rust-analyzer",
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode"
+    ],
+    "forwardPorts": [
+        3000
+    ],
+    "remoteUser": "vscode"
+}
